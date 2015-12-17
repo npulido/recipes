@@ -12,18 +12,65 @@
       {
         "activated": true,
         "metadata": {
-          "label": "Notify"
+          "label": "outbound"
         },
-        "properties": {
-          "channel": {
-            "type": "string",
-            "value": "Welcome"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "or dont"
+            },
+            "properties": {},
+            "children": [],
+            "id": "c2e77bb8-1c5b-446b-8023-0667cbe37bd6",
+            "type": "not"
           },
-          "inputParams": []
-        },
-        "children": [],
-        "id": "9ec7a385-bb64-408a-93b3-9e7f98da5e92",
-        "type": "sendMessage"
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [],
+            "id": "d6f7f398-f4c4-4ff5-b77a-3aa7849cbc62",
+            "type": "random"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "PKB1"
+            },
+            "properties": {
+              "destination": "1",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "02d09774-161c-428c-b83e-4f50359e648a",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Notify"
+            },
+            "properties": {
+              "channel": {
+                "type": "string",
+                "value": "Welcome"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "9ec7a385-bb64-408a-93b3-9e7f98da5e92",
+            "type": "sendMessage"
+          }
+        ],
+        "id": "48081073-4399-4f58-aca3-ac404d06a074",
+        "type": "sequence"
       }
     ],
     "id": "81c822f4-979f-4c40-8201-56d1270d000b"
