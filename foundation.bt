@@ -8,7 +8,24 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": "Notify"
+        },
+        "properties": {
+          "channel": {
+            "type": "string",
+            "value": "Welcome"
+          },
+          "inputParams": []
+        },
+        "children": [],
+        "id": "9ec7a385-bb64-408a-93b3-9e7f98da5e92",
+        "type": "sendMessage"
+      }
+    ],
     "id": "81c822f4-979f-4c40-8201-56d1270d000b"
   }
 ]
